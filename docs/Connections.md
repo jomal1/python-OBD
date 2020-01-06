@@ -13,7 +13,7 @@ connection = obd.OBD("/dev/ttyUSB0") # create connection with USB 0
 # OR
 
 ports = obd.scan_serial()      # return list of valid USB or RF ports
-print ports                    # ['/dev/ttyUSB0', '/dev/ttyUSB1']
+print(ports)                    # ['/dev/ttyUSB0', '/dev/ttyUSB1']
 connection = obd.OBD(ports[0]) # connect to the first port in the list
 ```
 
